@@ -9,12 +9,14 @@ Route::set('docs/media', 'docs/media(/<file>)', array('file' => '.+'))
 	));
 
 // API Browser
+/*
 Route::set('docs/api', 'docs/api(/<class>)', array('class' => '[a-zA-Z0-9_]+'))
 	->defaults(array(
 		'controller' => 'userguide',
 		'action'     => 'api',
 		'class'      => NULL,
 	));
+*/
 
 // Translated user guide
 Route::set('docs/guide', 'docs(/<page>)', array(
