@@ -5,8 +5,6 @@ table th { color: #444; background: #eee; }
 table td { background: #f4f4f4; }
 	table tr.alt td { background: #fff; }
 
-#navigation li { display:inline-block;  }
-
 .container .toggle { font-size: 0.7em; float: right; padding: 0 1em; cursor: pointer; color: #777; text-decoration: none; }
 
 #content ul.breadcrumb { display: block; margin: 0; padding: 0; overflow: auto; margin-bottom:1em; }

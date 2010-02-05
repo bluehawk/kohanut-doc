@@ -16,12 +16,7 @@
 	<h1>Kohanut</h1> 
 </div> 
  
-<ul id="navigation"> 
-    <li class="first"><a href="/">Home</a></li>
-	<li><a href="/download">Download</a></li>
-	<li class="current"><a href="/docs">Documentation</a></li>
-	<li><a href="/screenshots">Screenshots</a></li>
-	<li class="last"><a href="/development">Development</a></li> 
+<ul id="navigation"><li class="first"><a href="/">Home</a></li><li><a href="/download">Download</a></li><li class="current"><a href="/docs">Documentation</a></li><li><a href="/screenshots">Screenshots</a></li><li class="last"><a href="/development">Development</a></li> 
 </ul> 
  
 <div id='content' class='container_16'> 
