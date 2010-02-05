@@ -12,4 +12,4 @@ Kohanut was developed by Michael Peters, but it uses many libraries and modules 
  * [The Twig Project](http://www.twig-project.org/) by Fabien Potencier
  * [Markdown](http://daringfireball.net/projects/markdown/) by Daring Fireball
  * [Mathew Davies](http://mathew-davies.co.uk) for his xhtml and css design work
- * Michael Ebert for his [database design](/images/cms-database-design-03.png)
+ * Michael Ebert for his [database design](http://kohanut.com/images/cms-database-design-03.png)
