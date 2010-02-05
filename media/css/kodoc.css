@@ -5,17 +5,19 @@ table th { color: #444; background: #eee; }
 table td { background: #f4f4f4; }
 	table tr.alt td { background: #fff; }
 
+#navigation li { display:inline-block;  }
+
 .container .toggle { font-size: 0.7em; float: right; padding: 0 1em; cursor: pointer; color: #777; text-decoration: none; }
 
 #content ul.breadcrumb { display: block; margin: 0; padding: 0; overflow: auto; margin-bottom:1em; }
 	#content ul.breadcrumb li { display: block; float: left; margin: 0; padding: 0; padding-left: 0.6em; }
 	#content ul.breadcrumb li:before { content: '» '; color: #9E9E9E; }
 		#content ul.breadcrumb li a { }
-	
+/*
 #content ul , #content ol { margin-left:40px; margin-bottom:1.4em; padding:0; }
 #content ul li, #content ol li { padding:0; margin:0; }
 #content ul ul, #content ol ol, #content ol ul, #content ul ol { margin-left:25px; }
-	
+*/
 #menu { background: #eee; }
 	#menu ol,
 	#menu ul { margin: 0; padding: 0; list-style: none; }
@@ -27,36 +29,36 @@ table td { background: #f4f4f4; }
 	#menu ol { padding: 1em; }
 		#menu ol ul { padding-bottom: 0.6em; }
 
-#content { color:black; }
-#content h1 { margin-top: 0; }
-#content h1,
-#content h2,
-#content h3 { margin-left: -0px; padding: 0.4em 10px; padding-right: 0; background: #eee; }
-#content h1 small,
-#content h2 small,
-#content h3 small,
-#content h4 small,
-#content h5 small,
-#content h6 small { font-size: 0.9em; font-weight: normal; color: #444; }
-#content pre { font-size: 1em; line-height: 1.4em; }
+#docs { color:black; }
+#docs h1 { margin-top: 0; }
+#docs h1,
+#docs h2,
+#docs h3 { margin-left: -12px; padding: 0.4em 10px; padding-right: 0; background: #eee; }
+#docs h1 small,
+#docs h2 small,
+#docs h3 small,
+#docs h4 small,
+#docs h5 small,
+#docs h6 small { font-size: 0.9em; font-weight: normal; color: #444; }
+#docs pre { font-size: 1em; line-height: 1.4em; }
 
-#content div.class-list div.class { width: 50%; }
-#content div.class-list div.class.left { float: left; clear: both; }
-#content div.class-list div.class.right { float: right; }
-	#content div.class-list div.class h2 { margin: 0.4em; padding: 0.2em 0.4em; font-size: 1em; }
+#docs div.class-list div.class { width: 50%; }
+#docs div.class-list div.class.left { float: left; clear: both; }
+#docs div.class-list div.class.right { float: right; }
+	#docs div.class-list div.class h2 { margin: 0.4em; padding: 0.2em 0.4em; font-size: 1em; }
 
-#content div.toc { margin-bottom: 1em; padding-bottom: 1em; background: #eee; }
-	#content div.toc ul { margin: 0.6em 1em; padding: 0; list-style: none; }
-		#content div.toc li { margin: 0; padding: 0; }
-	#content div.toc h3 { margin: 0; padding: 0.2em 1em; font-size: 1em; color: #eee; background: #111; }
-#content div.method,
-#content div.properties,
-#content div.constants { margin-bottom: 1em; }
-	#content div.method h3 .param { font-weight: normal; cursor: help; }
-	#content div.method h3 abbr.param { text-transform: none; font-size: 1em; }
-#content p.note { display: block; padding: 0.4em 10px; background: #efefef; color: #444; font-size: 0.9em; border: solid 1px #eee; margin-bottom:1.4em; }
-#content dl.tags { overflow: auto; background: #eee; padding: 1em; border: solid 6px #ddd; }
-	#content dl.tags dt { margin: 0 0 0.4em; clear: both; float: left; width: 25%; }
-	#content dl.tags dd { margin: 0; padding: 0; clear: right; float: right; }
+#docs div.toc { margin-bottom: 1em; padding-bottom: 1em; background: #eee; }
+	#docs div.toc ul { margin: 0.6em 1em; padding: 0; list-style: none; }
+		#docs div.toc li { margin: 0; padding: 0; }
+	#docs div.toc h3 { margin: 0; padding: 0.2em 1em; font-size: 1em; color: #eee; background: #111; }
+#docs div.method,
+#docs div.properties,
+#docs div.constants { margin-bottom: 1em; }
+	#docs div.method h3 .param { font-weight: normal; cursor: help; }
+	#docs div.method h3 abbr.param { text-transform: none; font-size: 1em; }
+#docs p.note { display: block; padding: 0.4em 10px; background: #efefef; color: #444; font-size: 0.9em; border: solid 1px #eee; margin-bottom:1.4em; }
+#docs dl.tags { overflow: auto; background: #eee; padding: 1em; border: solid 6px #ddd; }
+	#docs dl.tags dt { margin: 0 0 0.4em; clear: both; float: left; width: 25%; }
+	#docs dl.tags dd { margin: 0; padding: 0; clear: right; float: right; }
 	
-#content pre { margin-left: 20px; margin-bottom:1.4em; }
+#docs pre { margin-left: 20px; margin-bottom:1.4em; }

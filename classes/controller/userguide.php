@@ -172,12 +172,12 @@ class Controller_Userguide extends Controller_Template {
 
 			// Add styles
 			$this->template->styles = array(
-				$media->uri(array('file' => 'css/print.css'))  => 'print',
-				$media->uri(array('file' => 'css/screen.css')) => 'screen',
-				$media->uri(array('file' => 'css/kodoc.css'))  => 'screen',
 				'http://kohanut.com/css/960.css' => 'screen',
 				'http://kohanut.com/css/template.css' => 'screen',
 				'http://kohanut.com/css/color.css' => 'screen',
+				$media->uri(array('file' => 'css/print.css'))  => 'print',
+				$media->uri(array('file' => 'css/screen.css')) => 'screen',
+				$media->uri(array('file' => 'css/kodoc.css'))  => 'screen',
 			);
 
 			// Add scripts

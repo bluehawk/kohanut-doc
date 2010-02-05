@@ -28,6 +28,7 @@ To install Kohanut, follow these instructions:
 5. Now point your browser to `/admin/install` and enter a password for the user `admin`, and click install. If you get no errors, then Kohanut is installed!
 
 6. For security, you should rename `modules/kohanut/controllers/admin/install` to something like `modules/kohanut/controllers/admin/installed`
+
 ## Installing from github:
 
 1. Download the code by cloning the repository, and fetching the submodules
@@ -44,7 +45,7 @@ To install Kohanut, follow these instructions:
    ~~~
 
     
-2. Next, either symbolic link **modules/kohanut/kohanutres** to **kohanutres** or copy it (linking is preferred)
+2. Next, either symbolic link `modules/kohanut/kohanutres` to `kohanutres` or copy it (linking is preferred)
 
    ~~~
    ln -s modules/kohanut/kohanutres/ kohanutres

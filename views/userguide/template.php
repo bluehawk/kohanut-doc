@@ -19,7 +19,7 @@
 <ul id="navigation"> 
     <li class="first"><a href="/">Home</a></li>
 	<li><a href="/download">Download</a></li>
-	<li class="current"><a href="/about">Documentation</a></li>
+	<li class="current"><a href="/docs">Documentation</a></li>
 	<li><a href="/screenshots">Screenshots</a></li>
 	<li class="last"><a href="/development">Development</a></li> 
 </ul> 
@@ -33,7 +33,7 @@
 		<?php endforeach ?>
 		</ul>
 		
-		<div class="container">
+		<div id="docs">
 			<?php echo $content ?>
 		</div>
 		
