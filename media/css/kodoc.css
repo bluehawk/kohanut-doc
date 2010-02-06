@@ -60,3 +60,18 @@ table td { background: #f4f4f4; }
 	#docs dl.tags dd { margin: 0; padding: 0; clear: right; float: right; }
 	
 #docs pre { margin-left: 20px; margin-bottom:1.4em; }
+
+#docs .sample {
+	padding-left:1.4em;
+	padding-top:1.4em;
+	padding-right:1.4em;
+	border:1px dashed grey;
+	margin-bottom:1.4em;
+}
+
+#docs .sample h1,
+#docs .sample h2,
+#docs .sample h3 {
+	background:none;
+}
+
