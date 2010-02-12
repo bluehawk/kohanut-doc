@@ -161,6 +161,9 @@ class Controller_Userguide extends Controller_Template {
 
 		// Set the content type for this extension
 		$this->request->headers['Content-Type'] = File::mime_by_ext($ext);
+		
+		// Send the content-length header
+		$this->request->headers['Content-Length'] = filesize($file);
 	}
 
 	public function after()
@@ -188,6 +191,10 @@ class Controller_Userguide extends Controller_Template {
 
 			// Add languages
 			$this->template->translations = Kohana::message('userguide', 'translations');
+			
+			// Set the Content Length header
+			$this->request->headers['Content-Length'] = mb_strlen($this->template);
+			
 		}
 
 		return parent::after();

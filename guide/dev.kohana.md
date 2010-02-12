@@ -1,12 +1,14 @@
 # Integrating with Kohana Controllers
 
-Intregrating your other Kohana Controllers with Kohanut is easy, thanks to the awesome HMVC of Kohana 3 you can just send a sub-request.  If you are only doing one or two pages, a sub-request will probably be faster and easier, but if you are integrating alot of controllers and actions, you will want to override the content.
+Intregrating your other Kohana Controllers with Kohanut is easy, thanks to the power of Kohana 3's HMVC design.  We can simply send a request for an external controller from within Kohanut.  This is easy to implement, and works great if you are only doing one or two pages. But if you are integrating alot of controllers and actions, you will want to call Kohanut from your controllers and override the content.
 
-## Using a sub-request
+## Using a request
 
-Simply create an element of the page of the type "Request" and then put the url of the request.  That's it!
+Let's say you have a `Controller_Actions` with an `action_contact()` that you want to show up on the contact page.  Just edit the contact page, and add an element of type "Request", and when prompted, type in the route to that controller, which by default is `/actions/contact`, and create the element.
 
-You will probably want to add this to the controller, so people can't access it directly, Kohanut should catch the exception and display the 404 page.
+That's it!  Kohanut calls a `Request::factory()` and puts the response right onto the page.
+
+You will probably want to add this to your controller, so if someone tried to browse to "/actions/contact" they wouldn't see the form without any of the styles on navigation, they exception will be caught by Kohanut and the 404 will be displayed.
 
     if ($this->request != Request::instance())
 	{
@@ -15,9 +17,9 @@ You will probably want to add this to the controller, so people can't access it 
 	
 ## Overriding Content
 
-Kohanut allows you to tell it to display a page from the database, but then display your own content instead of what was on the page.  So in a sense you are taking an existing page, overriding the content, and then displaying that.
+Kohanut also allows you to tell it to display a layout from the database, but then override the content with your own instead of having it look for a page to supply the content. 
 
-To do it, call `Kohanut::override($layoutname, $pageurl, $content)`.  Kohanut will find and render the layout with name `$layoutname` and mark `$pageurl` as the active page in the navs.  `$pageurl` **must actually be a page in the database** or the navigations can't draw correctly.  `$content` should be an array, with each element being put in a `content_area()`
+To do it, call `Kohanut::override($layoutname, $pageurl, $content)`.  Kohanut will find and render the layout with name `$layoutname` and mark `$pageurl` as the active page in the navs.  `$pageurl` **must actually be a page in the database** or the navigations can't draw correctly (though this may change).  `$content` should be an array, with each element being put in a `content_area()`
 
 	Kohanut::override('Two Column','/clients',array(
 		"This will be put in content area 1.",

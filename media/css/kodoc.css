@@ -61,11 +61,13 @@ table td { background: #f4f4f4; }
 	
 #docs pre { margin-left: 20px; margin-bottom:1.4em; }
 
+#docs img { padding:4px; background: white; border: solid 1px #ccc; }
+
 #docs .sample {
 	padding-left:1.4em;
 	padding-top:1.4em;
 	padding-right:1.4em;
-	border:1px dashed grey;
+	border:1px dashed #808080;
 	margin-bottom:1.4em;
 }
 

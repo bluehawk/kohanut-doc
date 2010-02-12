@@ -10,7 +10,7 @@ This will prompt you to fill in the information for a new page, fill out the inf
 
 ![Adding a new Page](img/pages-adding-page.jpg)
 
-To add a new piece of content to the main column, make sure that "Content" is selected, and click "New Element"
+To add a new piece of content to the main column, make sure that "Content" is selected, and click "Add Element"
 
 ![Add content to a Page](img/pages-add-content.jpg)
 

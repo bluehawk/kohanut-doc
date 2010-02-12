@@ -6,14 +6,10 @@ First, you need to first create a class that extends `Kohanut_Element`, (which i
 
 	Class Kohanut_Element_Example extends Kohanut_Element
 	{
-
-It must have a `$type` variable that is the same as the end of the class name (this should change soon, probably into a function called `type()`)
-
-	public $type = 'example';
 	
-If the element is not "unique" then you need to set the unique variable.  For example, a piece of content is unique because it can only be in one place, and only one block references it.  A snippet can have many blocks pointing at it, so it is not unique, so you would have to include the following:
+First, you need to decide whether an element is unique.  For example, a piece of content is unique because it can only be in one place, and only one block references it, so `$_unique` would be `TRUE`.  A snippet can have many blocks pointing at it, so `$_unique` wolud be `FALSE` like this:
 
-	public $unique = FALSE;
+	protected $_unique = FALSE;
 	
 You must also include the init that Sprig needs, including setting the table name to something different.
 
